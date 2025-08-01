@@ -109,7 +109,7 @@ autoscaling:
 volumes: 
  - name: app
    hostpath:
-     path: /path/to/data/dir
+     path: /datatmp/to/data/dir
  - name: tmp
    emptyDir:
      medium: Memory
