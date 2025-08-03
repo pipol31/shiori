@@ -7,9 +7,10 @@ spec:
   project: default
   source:
     repoURL: https://github.com/pipol31/shiori
+    path: chart/shiori
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: chart/shiori
+    namespace: shiori
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
