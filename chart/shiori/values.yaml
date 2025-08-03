@@ -132,3 +132,7 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+env:
+  - name: SHIORI_DIR
+    value: /srv/shiori

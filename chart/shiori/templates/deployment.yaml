@@ -76,3 +76,7 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      env:
+        - name: SHIORI_DIR
+          value: /srv/shiori
+
