@@ -136,4 +136,4 @@ affinity: {}
 
 env:
   - name: SHIORI_DIR
-    value: "/tmp/srv/shiori"
+    value: /srv/shiori
