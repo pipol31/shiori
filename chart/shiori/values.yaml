@@ -108,7 +108,7 @@ autoscaling:
 # Additional volumes on the output Deployment definition.
 volumes: 
  - name: app
-   hostpath:
+   hostPath:
      path: /tmp/datatmp/to/data/dir
  - name: tmp
    emptyDir:
@@ -120,9 +120,9 @@ volumes:
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
  - name: app
-   mountpath: /tmp/srv/shiori
+   mountPath: /srv/shiori
  - name: tmp
-   mountpath: /tmp
+   mountPath: /tmp
 
 #   mountPath: "/etc/foo"
 #   readOnly: true
@@ -136,4 +136,4 @@ affinity: {}
 
 env:
   - name: SHIORI_DIR
-    value: /tmp/srv/shiori
+    value: "/tmp/srv/shiori"
